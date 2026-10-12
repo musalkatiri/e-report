@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | E Report IDN</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/image.png"
+      type="image/x-icon"
+    />
+<!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+        <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+      <!-- CDN Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  </head>
+  <body class="detail-page">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="./assets/image.png" alt="Logo IDN" width="30" />
+          <span class="brand-text"><i>E Report</i> <strong>IDN</strong></span>
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-lg-4 gap-2 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#recent">Recent</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="panduan.html">Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="detail-page-main">
+      <div class="container">
+        <div class="detail-shell">
+          <div class="detail-content">
+            <nav class="detail-breadcrumb" aria-label="breadcrumb">
+              <ol class="breadcrumb mb-3">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.html#recent">Semua laporan</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Keran masjid rusak</li>
+              </ol>
+            </nav>
+
+            <div class="detail-header">
+              <span class="status-pill">Menunggu Penanganan</span>
+              <h1>Laporan keran masjid rusak</h1>
+              <p class="meta-line">By <strong>musa</strong> · 1 jam yang lalu</p>
+            </div>
+
+            <div class="detail-image-wrap">
+              <img src="./assets/kera rusak.jpeg" alt="Keran masjid rusak" />
+            </div>
+
+            <div class="detail-text">
+              <p>
+                Keran wudhu di area masjid putra mengalami kerusakan. Air yang keluar sangat kecil,
+                bahkan sering bocor terus-menerus saat tidak digunakan. Kondisi ini sudah berlangsung
+                sejak 2 hari lalu dan mengganggu jamaah yang akan berwudhu.
+              </p>
+              <blockquote>
+                “Airnya bocor terus, jadi lantai jadi becek dan licin. Mohon segera diperbaiki.”
+              </blockquote>
+              <p>
+                Dengan kondisi seperti ini, penggunaan air tidak efisien dan area wudhu jadi kurang nyaman.
+                Diharapkan pihak pengelola segera memeriksa dan mengganti keran agar aktivitas ibadah lancar kembali.
+              </p>
+            </div>
+
+            <hr class="detail-divider" />
+
+            <section class="comment-box">
+              <h4>Komentar</h4>
+              <form action="">
+                <div class="mb-3">
+                  <textarea class="form-control" rows="3" placeholder="Tulis komentar anda...."></textarea>
+                </div>
+                <button class="btn btn-primary px-4">
+                  Kirim <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </section>
+          </div>
+
+          <aside class="detail-sidebar">
+            <div class="card side-card">
+              <div class="card-header fw-bold">Laporan Serupa</div>
+              <div class="list-group list-group-flush">
+                <div class="list-group-item"><i class="fa-solid fa-chevron-right text-primary me-2"></i>Laporan AC panas</div>
+                <div class="list-group-item"><i class="fa-solid fa-chevron-right text-primary me-2"></i>Wifi burik 🛜</div>
+                <div class="list-group-item"><i class="fa-solid fa-chevron-right text-primary me-2"></i>WC mampet</div>
+              </div>
+            </div>
+
+            <div class="card side-card mt-4">
+              <div class="card-header fw-bold">Kategori</div>
+              <div class="card-body d-flex flex-wrap gap-2">
+                <span class="badge text-bg-primary">Sekolah</span>
+                <span class="badge text-bg-primary">Fasilitas</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-primary py-4 mt-4">
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-4 text-white">
+          <div class="col-md-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img src="./assets/image.png" alt="logo idn" width="30" class="rounded-circle" />
+              <h3 class="mb-0 fw-bold">E Report IDN</h3>
+            </div>
+          </div>
+          <div class="col-md-8 text-md-end">
+            <a class="text-white text-decoration-none opacity-75 me-3" href="index.html">Home</a>
+            <a class="text-white text-decoration-none opacity-75 me-3" href="index.html#about">About</a>
+            <a class="text-white text-decoration-none opacity-75 me-3" href="index.html#services">Services</a>
+            <a class="text-white text-decoration-none opacity-75" href="index.html#faq">FAQ</a>
+          </div>
+        </div>
+        <div class="copyright text-white text-center mt-3 pt-3 border-top border-light border-opacity-25">
+          <p class="mb-0">&copy; Copyright by <span class="fw-bold">RPL Class</span> 2026</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

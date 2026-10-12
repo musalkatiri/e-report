@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | E Report IDN</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/image.png"
+      type="image/x-icon"
+    />
+<!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+        <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+      <!-- CDN Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  </head>
+  <body>
+      <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="./assets/image.png" alt="Logo IDN" width="30" />
+          <span class="brand-text"><i>E Report</i> <strong>IDN</strong></span>
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-lg-4 gap-2 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#recent">Recent</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="panduan.html">Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+        <!-- semua laporan  -->
+        <section id="reports">
+            <div class="container">
+                <!-- judul -->
+                <div class="d-flex flex-column text-center flex-lg-row text-lg-start align-items-center justify-content-between mt-5 gap-2">
+                  <div class="col-lg-8">
+                    <h1 class="fw-bold">Semua <span class="text-primary">laporan</span></h1>
+                    <p class="text-secondary lh-lg">Temukan dan pantau semua laporan fasilitas yang telah disampaikan. Setiap laporan membantu kami meningkatkan kualitas, kebersihan, dan kenyamanan lingkungan bersama.</p>
+                  </div>
+                  <div class="col-lg-2">
+                    <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Tambah Laporan</button>
+                  </div>
+                </div>
+                <!-- filter -->
+                <div class="row gap-3 gap-md-0 align-items-center mt-3">
+                  <div class="col-md-4">
+                      <input type="text" class="form-control shadow-lg" placeholder="cari laporan....">
+                  </div>
+                  <div class="col">
+                      <select class="form-select shadow-lg">
+                          <option selected>Pilih kategori</option>
+                          <option value="akademik">Akademik</option>
+                          <option value="fasilitas">Fasilitas</option>
+                          <option value="anonymous">Anonymous</option>
+                      </select>
+                  </div>
+                  <div class="col"> 
+                        <select class="form-select shadow-lg">
+                          <option selected>Urutan</option>
+                          <option value="akademik">Terbaru</option>
+                          <option value="fasilitas">Terlama</option>
+                          <option value="anonymous">Terpopuler</option>
+                      </select></div>
+                  <div class="col-md-3">
+                      <button class="btn btn-primary w-100 shadow-lg">
+                          <i class="fa-solid fa-bars"></i>
+                          Filter
+                      </button>
+                  </div>
+                </div>
+                <!-- reports -->
+                <div class="row mt-5">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/kera rusak.jpeg" class="card-img-top" alt="keran rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Keran Wudhu</h5>
+                        <small>By: <a class="text-decoration-none" href="">alex</a> 2 days ago</small>
+                        <p class="card-text mt-3">Kondisi keran wudhu bocor dan aliran air mengecil, perlu tindakan perbaikan segara.😫</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/ompremg.png" class="card-img-top" alt="keran rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Omprenkk MBG😖</h5>
+                        <small>By: <a class="text-decoration-none" href="">jomi</a> 12 month ago</small>
+                        <p class="card-text mt-3">Kondisi ompreng wadah makan kurang bersih dan perlu penanganan higienis.🥴</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="assets/image copy.png" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Toilett</h5>
+                        <small>By: <a class="text-decoration-none" href="">Kasep</a> 12 days ago</small>
+                        <p class="card-text mt-3">omprenkk udeh gileeek🥵🥵</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/ompremg.png" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Omprenkk🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
+                        <p class="card-text mt-3">Kondisi Toilet Sudah Tidak Terkondusi🥵🥵</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/ompremg.png" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Toilettt🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">ipul</a> 12 days ago</small>
+                        <p class="card-text mt-3">Kondisi Toilet Sudah Tidak Terkondusi🥵🥵</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/ompremg.png" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Toilettt🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">jowo</a> 12 days ago</small>
+                        <p class="card-text mt-3">Kondisi Toilet Sudah Tidak Terkondusi🥵🥵</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/ompremg.png" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Toilettt🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">reusa</a> 12 days ago</small>
+                        <p class="card-text mt-3">Kondisi Toilet Sudah Tidak Terkondusi🥵🥵</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/ompremg.png" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Toilettt🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">ahmad</a> 12 days ago</small>
+                        <p class="card-text mt-3">Kondisi Toilet Sudah Tidak Terkondusi🥵🥵</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/ompremg.png" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Omprenkk🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">angha</a> 12 days ago</small>
+                        <p class="card-text mt-3">omprenkk udeh gileeek🥵🥵</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- pagination -->
+                  <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center mt-5">
+                          <li class="page-item disabled"><a class="page-link" href="index.html#hero">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                      </nav>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- add Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header bg-primary text-white fw-bold">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  <i class="fa-solid fa-pen-to-square"></i> Formulir tambah laporan</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <form action="">
+                <div class="modal-body p-5">
+                  <div class="mb-3">
+                    <label  class="form-label fw-bold"> Judul Laporan:</label>
+                    <input class="form-control shadow-lg" type="text">
+                  </div>
+                  <div class="mb-3">
+                    <label  class="form-label fw-bold" for="">Pilih Kategori:</label>
+                    <select class="form-select shadow-lg"> 
+                      <option selected>pilih kategori...</option>
+                      <option value="akademik">Akademik</option>
+                      <option value="fasilitas">Fasilitas</option>
+                      <option value="anonymous">Anonymous</option>
+                    </select>
+                  </div>
+                   <div class="mb-3">
+                    <label class="form-label fw-bold" for=""> Deskripsi Laporan:</label>
+                    <textarea class="form-control shadow-lg" rows="4" name="" id="" placeholder="tulis laporan anda..."></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label  class="form-label fw-bold" for=""> Upluod Foto:</label>
+                    <input class="form-control shadow-lg" type="file" name="" id="" accept="image/*"></input>
+                  </div>
+                <div class="modal-footer">
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                  <button type="submit" class="btn btn-primary">
+                   <i class="fa-solid fa-paper-plane"></i> Kirim Laporan
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+         <!-- section footer -->
+       <footer class="bg-primary py-5 mt-5">
+        <div class="container">
+          <div class="row py-5 row-gap-4 justify-content-between">
+            <div class="col-md-4 text-white">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <img src="./assets/image.png" alt="logo idn" width="30" class="d-inline-block align-text-top rounded-circle"/>
+                <h3 class="mb-2 fw-bold">E Report IDN</h3>
+              </div>
+              <p class="lh-lg opacity-75 m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ipsam voluptatem quae adipisci ad autem fugiat doloribus similique. Dicta officia quidem dolorum nisi rem velit impedit. Dolores iusto animi architecto?</p>
+            </div>
+            <div class="col-md-2 text-white d-flex flex-column gap-2">
+              <h4 class="fw-bold mb-2  text-white">Menu</h4>
+             <a class="text-decoration-none text-white opacity-75" href="index.html">Home</a>
+             <a class="text-decoration-none text-white opacity-75" href="index.html#about">About</a>
+             <a class="text-decoration-none text-white opacity-75" href="index.html#services">Services</a>
+             <a class="text-decoration-none text-white opacity-75" href="index.html#recent">Contact</a>
+             <a class="text-decoration-none text-white opacity-75" href="index.html#faq">FAQ</a>
+            </div>
+            <div class="col-md-4 text-white d-flex flex-column gap-2">
+              <h4 class="fw-bold mb-2"> Contact Us</h4>
+              <a href="mailto:rafasyakr@gmail.com" class="d-flex align-items-center gap-3 text-decoration-none opacity-75 text-white">
+                <i class="fa-regular fa-envelope"></i>
+                rafasyakr@gmail.com
+              </a>
+              <a href="https://wa.me/+62 878-6408-1772" class="d-flex align-items-center gap-3 text-decoration-none opacity-75 text-white">
+                <i class="fa-notdog-duo fa-solid fa-phone"></i>
+                +62 878-6408-1772
+              </a>
+              <a href="https://maps.app.goo.gl/32SNp2YA2o2nq1rcA" class="d-flex align-items-center gap-3 text-decoration-none opacity-75 text-white">
+                <i class="fa-notdog-duo fa-solid fa-location-dot"></i>
+                Jl. Raya Jonggol-Dayeuh, Sukanegara, Kec. Jonggol, Kabupaten Bogor, Jawa Barat 16830
+              </a>
+            </div>
+          </div>
+
+          <div class="copyright text-white text-center">
+            <p>&copy; Copyright by <span class="fw-bold">RPL Class</span> 2026, All right reserved.</p>
+          </div>
+        </div>
+       </footer>
+
+
+
+  <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+   
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous">
+    </script>
+
+    <script src="./assets/scroll-animation.js"></script>
+
+  </body>
+</html>
